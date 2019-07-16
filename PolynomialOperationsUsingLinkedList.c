@@ -189,63 +189,6 @@ void multiply(struct node *m1,struct node *m2,struct node *m)
         size1--;
 
     }
-/*
-Standard Multiplication of 2 polynomials
-    struct node *m2hptr=m2;
-    struct node *temp=(struct node *)malloc(sizeof(struct node));
-    temp->next=NULL;
-    struct node *thptr=temp;
-    while(m1)
-    {
-
-        while(m2)
-        {
-            temp->coe=m1->coe*m2->coe;
-            temp->pow=m1->pow+m2->pow;
-            temp->next=NULL;
-
-            m2=m2->next;
-            if(m2)
-            {
-                temp->next=(struct node *)malloc(sizeof(struct node));
-                temp=temp->next;
-                temp->next=NULL;
-
-            }
-
-        }
-
-        m2=m2hptr;
-        if(m->next==NULL)
-        {
-            temp=thptr;
-            while(temp)
-            {
-                m->coe=temp->coe;
-                m->pow=temp->pow;
-                temp=temp->next;
-                if(temp)
-                {
-                    m->next=(struct node*)malloc(sizeof(struct node));
-                    m=m->next;
-                    m->next=NULL;
-                }
-            }
-            m1=m1->next;
-            temp=thptr;
-        }
-        else
-        {
-            temp=thptr;
-            add(temp,m,m);
-            m1=m1->next;
-
-        }
-
-    }
-*/
-//shifting technique
-
 
 }
 
